@@ -1,0 +1,20 @@
+{
+	"author": "Oleg Smith (http://olegsmith.com)",
+	"name": "bootstrap.dropdownform",
+	"description": "A DropdownForm plugin based on the bootstrap Dropdown plugin.",
+	"version": "0.0.1",
+	"homepage": "http://olegsmith.github.com/bootstrap.dropdownform",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:olegsmith/bootstrap.dropdownform.git"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"grunt":		       "latest",
+		"grunt-contrib-uglify":"latest"
+	},
+	"optionalDependencies": {},
+	"engines": {
+		"node": "*"
+	}
+}

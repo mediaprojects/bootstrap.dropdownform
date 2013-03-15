@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://twitter.github.com/bootstrap/examples/marketing-narrow.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Template · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap.dropdownform.css"> 
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <h3 class="muted">Bootstrap.dropdownform plugin</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <p class="lead">Support DropdownForms with Dropdowns</p>
+        <a class="btn btn-large btn-success" href="https://github.com/olegsmith/bootstrap.dropdownform">View on GitHub</a>
+        <a class="btn btn-large btn-success" href="https://github.com/olegsmith/bootstrap.dropdownform/zipball/master">.zip file</a>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Problem</h4>
+          <p>Dropdown in DropdownForm is not working</p>
+
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn dropdownform-toggle">
+                                    Dropdown Form with Dropdowns
+                                    <span class="caret">
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu" style="width:600px;">
+                                    <li>
+                                        <form style="margin:15px;">
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Action type:
+                                                </div>
+                                                <div class="span10">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> Single Family</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i>  Single Family</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> Manufactured</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Price:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Area:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Beds:
+                                                </div>
+                                                <div class="span4">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> 0+</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 2+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 3+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 4+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 6+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 10+</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="span2">
+                                                    Baths:
+                                                </div>
+                                                <div class="span4">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> 0+</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1.5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 2+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 3+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 4+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 6+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 10+</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Year build:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span12">
+                                                    <button type="button" class="btn btn-primary apply">
+                                                        Apply
+                                                    </button>
+                                                    <button type="button" class="btn cancel">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+
+        </div>
+
+        <div class="span6">
+          <h4>Solution</h4>
+          <p>Using bootstrap.dropdownform plugin</p>
+
+                                      <div class="btn-group">
+                                <button data-toggle="dropdownform" class="btn dropdownform-toggle">
+                                    Dropdown Form with Dropdowns
+                                    <span class="caret">
+                                    </span>
+                                </button>
+                                <ul class="dropdown-form" style="width:600px;">
+                                    <li>
+                                        <form style="margin:15px;">
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Action type:
+                                                </div>
+                                                <div class="span10">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> Single Family</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i>  Single Family</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> Manufactured</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Price:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Area:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Beds:
+                                                </div>
+                                                <div class="span4">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> 0+</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 2+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 3+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 4+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 6+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 10+</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="span2">
+                                                    Baths:
+                                                </div>
+                                                <div class="span4">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="#"><i class="icon-pencil"></i> 0+</a>
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 1.5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 2+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 3+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 4+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-pencil"></i> 5+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 6+</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-trash"></i> 10+</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span2">
+                                                    Year build:
+                                                </div>
+                                                <div class="span10">
+                                                    <input type="text" placeholder="Min">
+                                                    <input type="text" placeholder="Max">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid" style="margin-top:10px;">
+                                                <div class="span12">
+                                                    <button type="button" class="btn btn-primary apply">
+                                                        Apply
+                                                    </button>
+                                                    <button type="button" class="btn cancel">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <h4>Using</h4>
+          <p>Add css</p>
+
+
+<pre class="prettyprint" >
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;href=&quot;bootstrap.dropdownform.css&quot;&gt;
+</pre>
+
+          <p>Add script</p>
+
+
+<pre class="prettyprint" >
+&lt;script src=&quot;bootstrap.dropdownform.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+
+          <p>Add html</p>
+
+
+<pre class="prettyprint" >
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button data-toggle=&quot;dropdownform&quot; class=&quot;btn dropdownform-toggle&quot;&gt;Dropdown Form with
+    Dropdowns&lt;/button&gt;
+
+    &lt;ul class=&quot;dropdown-form&quot; style=&quot;width:600px;&quot;&gt;
+      &lt;li&gt;
+        &lt;form style=&quot;margin:15px;&quot;&gt;
+          &lt;div class=&quot;row-fluid&quot; style=&quot;margin-top:10px;&quot;&gt;
+            &lt;div class=&quot;span2&quot;&gt;
+              Action type:
+            &lt;/div&gt;
+
+            &lt;div class=&quot;span10&quot;&gt;
+              &lt;div class=&quot;btn-group&quot;&gt;
+                &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Single Family&lt;/a&gt; &lt;a class=&quot;btn dropdown-toggle&quot;
+                data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+
+                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Single Family&lt;/a&gt;&lt;/li&gt;
+
+                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Manufactured&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+</pre>
+
+        </div>
+      </div>
+
+
+      <div class="row-fluid">
+        <div class="span12">
+          <h4>Build</h4>
+          <p>Install grunt</p>
+
+
+<pre class="prettyprint" >
+$ git clone git@github.com:olegsmith/bootstrap.dropdownform.git
+$ cd bootstrap.dropdownform
+$ npm install -g grunt-cli (if grunt-cli is not installed)
+$ npm install grunt@0.4
+$ npm install grunt-contrib-uglify
+</pre>
+
+          <p>Build</p>
+
+
+<pre class="prettyprint" >
+$ grunt
+</pre>
+
+        </div>
+      </div>
+
+
+      <hr>
+
+      <div class="footer">
+                        <p class="copyright">
+                    Bootstrap.dropdownform maintained by
+                    <a href="https://github.com/olegsmith">olegsmith</a>
+                </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap.dropdownform.js"></script>
+    <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true"></script>
+
+  
+
+</body></html>
